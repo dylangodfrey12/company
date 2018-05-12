@@ -1,14 +1,51 @@
 footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 5rem;
-  font-size: 0.8rem;
-  background-color: $primary-color;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: rgba(30, 37, 45, 0.815);
   color: $white;
-  border-top: 1px solid $asbestos;
+  padding: 3vh 5vw;
+  .footer{
+    &-contact-col{
+      display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  
+    }
 
+    &-link{
+      font-size: 15px;
+    }
+   &-bottom-bar{
+    display: flex;
+    flex-wrap: wrap;
+width: 100%;
+   }
+    &-col{
+      width: 35%;
+      margin-left: 3%;
+
+      &-bottom{
+        width: 100%;
+        margin-left: 3%;
+       
+      }
+    }
+  &-logo{
+    font-size: 20vw;
+    opacity: .4;
+    position: absolute;
+    left: 8%;
+
+    &-text {
+      display: block;
+      top: 20%;
+      font-size: 2vw;
+      text-align: center;
+    }
+  } 
+}
   a {
     font-weight: bold;
     color: $white;
